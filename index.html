@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvir Anjom Siddique Front End Developer</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head> 
+
+<!-- 
+    getbootstrap.com> scroll spy > via data attribute > copy..
+     Therefore,when click a link on navbar ".navbar .navlink.active" will be applied.
+    link in navbar will be Active and it will scroll to corresponding tagID
+-->
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!--getbootstrap -> download compiled files  -->
+    <!-- Line awesome icon > download -->
+    <!-- animate on scroll -->
+    <!-- Bai Jamjuree Font at fonts.google.com -->
+
+    <!------------------------ navbar -------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <!-- Starting from Large Flex direction of Navbar is Column -->
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Tanvir Anjom Siddique</span>
+                <!-- Hide text in Large screen: d-lg-none -->
+                <img src="./assets/images/alvi.jpg" class="d-none d-lg-block rounded-circle" alt="">
+                <!-- display=none but display image in Large screen -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+<!-- statring From Large flex-direction:column -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+                <!-- end navbar-nav -->
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar navbar-expand-lg -->
+
+    <!--------------------------- CONTENT WRAPPER ------------------------------->
+    <div id="content-wrapper">
+
+        <!----------------- Home -------------------------------->
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <!-- Add animation:
+                            go to animate on scroll > view on github >copy Initialize AOS >paste it in main.js  
+                            animate on scroll page>search 'fade up, delay' > copy class > data-aos="fade-up" ,data-aos-delay
+                        -->
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">
+                            I'M A <span class="text-brand">FRONT END WEB DEVELOPER</span> FROM RAJSHAHI, BANGLADESH
+                        </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            I am Tanvir Anjom Siddique, And I craft high-performing and delightful experiences tailored and conversion-focused
+                        </p>
+                        <!-- custom: text-brand,navbar-brand,btn,btn-brand,link-custom -->
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                            <a href="#" class="link-custom">Call: 880 1715 619397</a>
+                        </div>
+                    </div>
+                    <!-- end col-lg-10 -->
+                </div>
+                <!-- end grid row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!--------------------------End Home ------------------------>
+
+        <!-------------------------- Services ----------------------->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>Services That I Provide</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="h-100 col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <!-- custom class: sevice,bg-base,shadow-effect -->
+                            <div class="iconbox rounded-4">
+                                <i class="las la-feather"></i>
+                                <!-- goto line awesome search 'feather' copy class. Before that downloader line awesome icon should be included. -->
+                            </div>
+                            <h5 class="mt-4 mb-2">UX Design</h5>
+                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+                    <!-- end col-md-4 fade-up -->
+
+                    <!-- each div has different delay(increasing order) set.So that they fade up One by One
+                    data-aos-dalya="300" , "600"... -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-pencil-ruler"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Branding</h5>
+                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Web Designing</h5>
+                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-----------------------------------End Services ------------------------------------------>
+        <!---------------------------------- Work -------------------------------------------------->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">WORK</h6>
+                        <h1>My Recent Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+                    <!-- set gutter top & bottom: 4; in grid -->
+                    <div class="col-md-6" data-aos="fade-up">
+                        <!--
+                            inside each column of grid set 
+                            h-100: use 100% height of parent element.
+                            Hence all column of Grid will be equal height -->
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/devp.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Startup Landing Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/FEB.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Front End Bootcamp Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6" data-aos="fade-up">  
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/swc.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Simple Weight Converter</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/BetterHome.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Startup Landing Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/travelform.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Travel Form</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/portfolio.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Portfolio</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!------------------------------------- End Work ------------------------------------------>
+        
+        <!------------------------------------- About --------------------------------------------->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">ABOUT</h6>
+                        <h1>My Education & Experience</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>BSC In CSE</h4>
+                                    <p class="text-brand mb-2">Rajshahi University of Engineering & Technology 
+                                        <br>(2019 - 2024)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>HSC</h4>
+                                    <p class="text-brand mb-2">Notre Dame College, Dhaka 
+                                        <br>(2017 - 2019)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>SSC</h4>
+                                    <p class="text-brand mb-2">Kalihai RS Pilot Model High School, Tangail 
+                                        <br>(2012 - 2017)</p>
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Front End Web Developer</h4>
+                                    <p class="text-brand mb-2">RCF Dev Team 
+                                        <br>(2022- 2023)</p>                                    
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                    <!-- <br> -->
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter 
+                                        <br>(2018 - 2020)</p>        
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Applications developer</h4>
+                                    <p class="text-brand mb-2">Twitter 
+                                        <br>(2018 - 2020)</p>                                    
+                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                    <!-- <br> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end col-lg-12 -->
+
+                </div>
+
+            </div>
+        </section>
+        <!-------------------------End About ---------------------->
+
+        <!------------------------- Reviews ----------------------->
+        <section id="reviews" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">REVIEWS</h6>
+                        <h1>What our subscribers say</h1>
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row gy-4">
+
+                    <div class="h-100 col-md-4" data-aos="fade-up">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col-md-3  -->
+
+                    <div class="h-100 col-md-4" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Smith</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end col-md-3  -->
+
+                    <div class="h-100 col-md-4" data-aos="fade-up" data-aos-delay="600">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">David</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end col-md-3  -->
+
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- End container -->
+        </section>
+        <!--------------------------End Reviews--------------------------------->
+
+        <!------------------------- Blog --------------------------------------->
+        <section id="blog" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">BLOG</h6>
+                        <h1>My BLog Posts</h1>
+                    </div>
+                </div>
+                <!-- end 1st grid 'row' -->
+
+                <div class="row gy-4">
+                    <!-- make all columns same height -->
+                    <div class="h-100 col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">20 Dec, 2022</p>
+                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-100 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">20 Dec, 2022</p>
+                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-100 col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <p class="text-brand mb-2">20 Dec, 2022</p>
+                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row gy-4 -->
+
+            </div>
+        </section>
+        <!---------------------------End Blog -------------------------------------->
+
+        <!--------------------------- Contact -------------------------------------->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Interested in working together? Let's talk
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-----------------------End Contact ---------------------------->
+
+        <!---------------------- Footer ----------------------------->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Designed by <a href="#" class="fw-bold">Tanvir Anjom Siddique</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="#"><i class="lab la-twitter"></i></a>
+                            <a href="#"><i class="lab la-instagram"></i></a>
+                            <a href="#"><i class="lab la-dribbble"></i></a>
+                            <a href="#"><i class="lab la-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!----------------End Footer --------------------------->
+    </div>
+    <!-- End Content Wrapper -->
+
+
+    <!-- -------------------JS----------------- -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
