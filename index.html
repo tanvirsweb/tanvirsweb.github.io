@@ -31,6 +31,10 @@
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">Tanvir Anjom Siddique</span>
                 <!-- Hide text in Large screen: d-lg-none -->
+                <div class="d-none d-lg-block">
+                    <br><br><br>
+                    <!-- for setting scroll in navbar: part of image gets cut.Hence use br to create some vertical space above picture. -->
+                </div>
                 <img src="./assets/images/alvi.jpg" class="d-none d-lg-block rounded-circle" alt="">
                 <!-- display=none but display image in Large screen -->
             </a>
@@ -121,8 +125,8 @@
 
                 <div class="row gy-4">
 
-                    <div class="h-100 col-md-4" data-aos="fade-up">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
                             <!-- custom class: sevice,bg-base,shadow-effect -->
                             <div class="iconbox rounded-4">
                                 <i class="las la-feather"></i>
@@ -138,7 +142,7 @@
                     <!-- each div has different delay(increasing order) set.So that they fade up One by One
                     data-aos-dalya="300" , "600"... -->
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
                                 <i class="las la-pencil-ruler"></i>
                             </div>
@@ -149,7 +153,7 @@
                     </div>
 
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
                                 <i class="las la-laptop-code"></i>
                             </div>
@@ -180,9 +184,12 @@
                     <!-- set gutter top & bottom: 4; in grid -->
                     <div class="col-md-6" data-aos="fade-up">
                         <!--
+                            All column of Grid in same row are of equal height
+
                             inside each column of grid set 
-                            h-100: use 100% height of parent element.
-                            Hence all column of Grid will be equal height -->
+                            h-100: use 100% height of parent element(col-md-6).        
+                            Hence child of each column will take full height of the column & so all of them of same row will have same height.
+                        -->
                         <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/devp.png" alt="">
@@ -279,6 +286,7 @@
                     </div>
                 </div>
 
+                <!-- -----------------Education & Experience--------------------------------- -->
                 <div class="row gy-5">
                     <div class="col-lg-6">
 
@@ -551,8 +559,8 @@
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
-                            <a href="#"><i class="lab la-twitter"></i></a>
-                            <a href="#"><i class="lab la-instagram"></i></a>
+                            <a href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
                             <a href="#"><i class="lab la-dribbble"></i></a>
                             <a href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
                         </div>

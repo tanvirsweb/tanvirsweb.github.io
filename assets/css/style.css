@@ -10,6 +10,14 @@
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
+/* modify bootstrap 5 navbar (fixed-top) -> to set "scroll navbar" to solve content hidden problem 
+so that to all lg screen we can see full navbar.
+*/
+.navbar {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+/* --------------------------- */
 
 body {
     background-color: var(--color-base2);
