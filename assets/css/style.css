@@ -10,20 +10,73 @@
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
+
+/* ----------------------Hide Overflow Scrollbar but keep scroll option-------------------- */
+
 /* modify bootstrap 5 navbar (fixed-top) -> to set "scroll navbar" to solve content hidden problem 
 so that to all lg screen we can see full navbar.
 */
 .navbar {
-    overflow-y: auto;
+    overflow: auto;
     max-height: 100vh;
 }
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge, and Firefox */
+.navbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 /* --------------------------- */
 
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
-    font-family: var(--font-base), sans-serif;
+    font-family: var(--font-base), sans-serif;    
 }
+
+/* --------------------------Typing Animation----------------------------------------*/
+.typing-animation-container {
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.text.first-text {
+    color: #FFF;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.typing-animation-container .text.text.typing-animation {
+    color: var(--color-brand2);
+}
+
+
+.typing-animation-container .text.typing-animation:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-base2);
+    border-left: 2px solid var(--color-brand);
+    animation: animate 4s steps(16) infinite;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/* --------------------------End Typing Animation----------------------------------- */
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
@@ -104,7 +157,26 @@ img {
 .navbar .nav-link.active {
     color: var(--color-brand);
 }
+
+/* .navbar-brand img  */
+.round-border-img{
+    border: 8px solid var(--color-brand);
+}
+
+.zoom-out-hover:hover {
+    transform: scale(.95);
+}
+
+
 /* ------------------Media Query---------------- */
+@media (max-width: 768px) {
+    .typing-animation-container {        
+        font-size: x-large;
+    }
+    .text.first-text {
+        font-size: x-large;
+    }
+}
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
@@ -112,10 +184,6 @@ img {
         background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/sidebar-img.jpg);
         background-size: cover;
         background-position: center;
-    }
-
-    .navbar-brand img {
-        border: 8px solid var(--color-brand);
     }
 
     /* CONTENT WRAPPER */

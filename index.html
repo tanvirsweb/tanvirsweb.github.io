@@ -8,7 +8,7 @@
     <meta name="description" content="I am  Tanvir Anjom Siddique Alvi. Check out my portfolio of web design and development.">
     <meta name="keywords" content="portfolio, web design, web development,Tanvir Anjom Siddique Alvi">
 
-    <title>Tanvir Anjom Siddique | Front End Developer</title>
+    <title>Tanvir Anjom Siddique | CSE Engineer</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
@@ -38,10 +38,11 @@
                 <div class="d-none d-lg-block">
                     <br><br><br>
                     <!-- for setting scroll in navbar: part of image gets cut.Hence use br to create some vertical space above picture. -->
+                    <img src="./assets/images/alvi.jpg" alt="Tanvir Anjom Siddique" class="round-border-img d-none d-lg-block rounded-circle">
+                    <!-- display=none but display image in Large screen -->
                 </div>
-                <img src="./assets/images/alvi.jpg" alt="Tanvir Anjom Siddique" class="d-none d-lg-block rounded-circle" alt="">
-                <!-- display=none but display image in Large screen -->
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -83,31 +84,45 @@
 
         <!----------------- Home -------------------------------->
         <section id="home" class="full-height px-lg-5">
-
+            
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="zoom-out-hover col-11 col-lg-4 d-block d-lg-none">
+                        <img src="./assets/images/alvi.jpg" alt="Tanvir Anjom Siddique" class="round-border-img rounded-circle">
+                    </div>
+                    <div class="col-12"></div>
+                    <div class="col-12 col-lg-8">
                         <!-- Add animation:
                             go to animate on scroll > view on github >copy Initialize AOS >paste it in main.js  
                             animate on scroll page>search 'fade up, delay' > copy class > data-aos="fade-up" ,data-aos-delay
                         -->
                         <h1 class="display-4 fw-bold" data-aos="fade-up">
-                            I'M A <span class="text-brand">FRONT END WEB DEVELOPER</span> FROM RAJSHAHI, BANGLADESH
+                            I'M <span class="text-brand">TANVIR ANJOM</span><br> SIDDIQUE
                         </h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            I am Tanvir Anjom Siddique, And I craft high-performing and delightful experiences tailored and conversion-focused
-                        </p>
+                        <!-- <h3 class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300"> -->
+                            <!-- I am Tanvir Anjom Siddique, And I craft high-performing and delightful experiences tailored and conversion-focused -->
+                            <!-- I'M A <span class="text-brand">FRONT END & BACK END WEB DEVELOPER</span> FROM RAJSHAHI, BANGLADESH -->
+                        <!-- </h3>   -->
+                        
+                        <br>
+                        <span class="text first-text">I'm </span>
+                        <span class="typing-animation-container mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">                        
+                            <span class="text typing-animation">&nbsp a CSE Engineer.</span>
+                        </span>                        
+
                         <!-- custom: text-brand,navbar-brand,btn,btn-brand,link-custom -->
                         <div class="d-md-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
                             <div class="p-2">
                                 <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
                             </div>
                             <div class="p-2">
-                                <a href="#" class="link-custom">Call: 880 1715 619397</a>
+                                <!--The href attribute with the tel: scheme tells the browser to initiate a phone call when the link is clicked.
+                                The phone number should be in international format, including the country code, to ensure it works correctly across different devices and regions. -->
+                                <a href="tel:+8801715619397" class="link-custom">Call: 880 1715 619397</a>
                             </div>
                             
                         </div>
-                    </div>
+                    </div>    
                     <!-- end col-lg-10 -->
                 </div>
                 <!-- end grid row -->
@@ -335,7 +350,7 @@
 
                             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Front End Web Developer</h4>
+                                    <h4>Web Developer</h4>
                                     <p class="text-brand mb-2">RCF Dev Team 
                                         <br>(2022- 2023)</p>                                    
                                     <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
@@ -559,14 +574,14 @@
             <div class="container">
                 <div class="row gy-4 justify-content-between">
                     <div class="col-auto">
-                        <p class="mb-0">Designed by <a href="#" class="fw-bold">Tanvir Anjom Siddique</a></p>
+                        <p class="zoom-out-hover mb-0">Designed by <a href="#" class="fw-bold">Tanvir Anjom Siddique</a></p>
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
-                            <a href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
-                            <a href="https://tanvirsweb.github.io/portfolio/"><i class="lab la-dribbble"></i></a>
-                            <a href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
+                            <a class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
+                            <a class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
+                            <a class="zoom-out-hover" href="https://tanvirsweb.github.io/portfolio/"><i class="lab la-dribbble"></i></a>
+                            <a class="zoom-out-hover" href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -584,5 +599,6 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./assets/js/emailJS.js"></script>
+    <script src="./assets/js/typeWriting.js"></script>
 </body>
 </html>
