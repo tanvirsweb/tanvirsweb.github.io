@@ -73,7 +73,7 @@
   .tag-list li {
     color: var(--color-base2);
     font-weight: bold;
-    font-size: large;
+    font-size:larger;
     min-width: 85px;
     text-align: center;
 
