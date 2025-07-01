@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
     <link rel="stylesheet" href="./assets/css/infinite-scroller.min.css">
+
+    <style>
+        .card-custom-image img {
+            height: 250px;             /* Set a fixed height */
+            width: 100%;               /* Stretch to container width */
+            object-fit: cover;         /* Maintain aspect ratio and crop overflow */
+        }
+    </style>
     
 </head> 
 
@@ -90,6 +98,7 @@
 
                 </ul>
                 <!-- end navbar-nav -->
+                 
             </div>
         </div>
     </nav>
@@ -130,18 +139,31 @@
 
                         <!-- custom: text-brand,navbar-brand,btn,btn-brand,link-custom -->
                         <div class="d-md-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
-                            <div class="p-2">
+                            <div class="py-2">
                                 <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
                             </div>
-                            <div class="p-2">
+                            <div class="py-2">
                                 <!--The href attribute with the tel: scheme tells the browser to initiate a phone call when the link is clicked.
                                 The phone number should be in international format, including the country code, to ensure it works correctly across different devices and regions. -->
                                 <a href="tel:+8801715619397" class="link-custom">Call: +880 1715 619397</a>
                             </div>
                             
                         </div>
-                    </div>    
+                        <br><br>
+                        <div class="d-md-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
+                            <div class="social-icons">
+                                <a class="zoom-out-hover" href="mailto: tanvir.anjom.siddique@gmail.com"><i class="lar la-envelope"></i></a>
+                                <a target="blank" class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
+                                <a target="blank" class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
+                                <a target="blank" class="zoom-out-hover" href="https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34"><i class="lab la-dribbble"></i></a>
+                                <a target="blank" class="zoom-out-hover" href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div> 
+
                     <!-- end col-lg-10 -->
+                                 
                 </div>
                 <!-- end grid row -->
             </div>
@@ -167,13 +189,18 @@
                         <li class="zoom-out-hover">C++</li>
                         <li class="zoom-out-hover">Java</li>
                         <li class="zoom-out-hover">Python</li>
-                        <li class="zoom-out-hover">PHP</li>
-                        <li class="zoom-out-hover">MySQL</li>
                         <li class="zoom-out-hover">HTML</li>
                         <li class="zoom-out-hover">CSS</li>
                         <li class="zoom-out-hover">Bootstrap</li>
+                        <li class="zoom-out-hover">JS</li>
+                        <li class="zoom-out-hover">Django</li>
+                        <li class="zoom-out-hover">PHP</li>                                                                     
+                        <li class="zoom-out-hover">Express.js</li>
                         <li class="zoom-out-hover">Node.js</li>
-                        <li class="zoom-out-hover">ExpressJS</li>
+                        <li class="zoom-out-hover">React</li>
+                        <li class="zoom-out-hover">TypeScript</li>
+                        <li class="zoom-out-hover">MySQL</li> 
+                        <li class="zoom-out-hover">MySQL Lite</li>                         
                         <li class="zoom-out-hover">Prisma</li>
                         <li class="zoom-out-hover">SEO</li>                    
                         <!-- <li class="zoom-out-hover"> --|-- </li> -->
@@ -287,8 +314,73 @@
                 </div>
 
                 <div class="row gy-4">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                            <img class="rounded-4" src="https://img.youtube.com/vi/PAmmYIlerAg/maxresdefault.jpg" alt="Object Detection Website">
+                            </div>
+                            <div class="card-custom-content p-4">
+                            <h4>Objectify.ai – Object Detection</h4>
+                            <p>Intelligent web app that detects objects in uploaded images using a deep learning model (MobileNet SSD) integrated into a Django backend.</p>
+                            <a target="_blank" href="https://github.com/tanvirsweb/Object-Detection-Website-using-Django-YoloV3" class="link-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                            <img class="rounded-4" src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlbnRhbCUyMGhvdXNlfGVufDB8fDB8fHww" alt="House Renting Website">                            
+                            </div>
+                            <div class="card-custom-content p-4">
+                            <h4>House Renting Platform</h4>
+                            <p>Responsive rental platform with user/admin login, post management, and secure backend using PHP (PDO) and MySQL. Protected with MD5 password encoding.</p>
+                            <a target="_blank" href="https://github.com/tanvirsweb/HouseRentingWebsite" class="link-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                            <img class="rounded-4" src="https://img.youtube.com/vi/lRDCZYt5GBQ/maxresdefault.jpg" alt="6-bit Computer Project">
+                            </div>
+                            <div class="card-custom-content p-4">
+                            <h4>6-bit Computer Simulation</h4>
+                            <p>Designed a 6-bit computer with a custom 16-bit ISA and 9×16 RAM in a digital simulator. Supported arithmetic, logic, and jump instructions.</p>
+                            <a target="_blank" href="https://github.com/tanvirsweb/Digital-6bit_Computer_with_16-bit_ISA-_9X16_RAM" class="link-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300"> 
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/swc.webp" alt="Weight Converter by Tanvir">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Simple Weight Converter</h4>
+                                <p>A lightweight web application that allows users to convert weights between kilograms, grams, pounds, and ounces in real time. Built using HTML, CSS, and JavaScript for fast, responsive performance without backend dependencies.</p>
+                                <a target="_blank" href="https://tanvirsweb.github.io/weightconverter/" class="link-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./assets/images/FEB.webp" alt="Front End Bootcamp by Tanvir">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Front End Bootcamp Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a target="_blank" href="https://tanvirsweb.github.io/FrontEndBootcamp/" class="link-custom">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                        
                     <!-- set gutter top & bottom: 4; in grid -->
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <!--
                             All column of Grid in same row are of equal height
 
@@ -303,40 +395,13 @@
                             <div class="card-custom-content p-4">
                                 <h4>Startup Landing Page</h4>
                                 <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                                <a href="https://tanvirsweb.github.io/RCF_Dev_Projects/1903039_RCF_DEV_Task1/" class="link-custom">Read More</a>
+                                <a target="_blank" href="https://tanvirsweb.github.io/RCF_Dev_Projects/1903039_RCF_DEV_Task1/" class="link-custom">View Project</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/FEB.webp" alt="Front End Bootcamp by Tanvir">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Front End Bootcamp Page</h4>
-                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                                <a href="https://tanvirsweb.github.io/FrontEndBootcamp/" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-md-6" data-aos="fade-up">  
-                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/swc.webp" alt="Weight Converter by Tanvir">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Simple Weight Converter</h4>
-                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                                <a href="https://tanvirsweb.github.io/weightconverter/" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
 
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
                         <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/BetterHome.webp" alt="Better home landing page by Tanvir">
@@ -344,12 +409,12 @@
                             <div class="card-custom-content p-4">
                                 <h4>Startup Landing Page</h4>
                                 <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                                <a href="https://tanvirsweb.github.io/RCF_Dev_Projects/LandingPage_HomeRenting/main.html" class="link-custom">Read More</a>
+                                <a target="_blank" href="https://tanvirsweb.github.io/RCF_Dev_Projects/LandingPage_HomeRenting/main.html" class="link-custom">View Project</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/coxsbazar.webp" alt="CoxsBazar travel form by Tanvir">
@@ -357,13 +422,13 @@
                             <div class="card-custom-content p-4">
                                 <h4>Travel Form</h4>
                                 <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                                <a href="#" class="link-custom">Read More</a>
+                                <a target="_blank" href="#" class="link-custom">View Project</a>
                             </div>
                         </div>
                     </div>
                     
 
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
                         <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./assets/images/portfolio.webp" alt="Portfolio by Tanvir">
@@ -371,7 +436,7 @@
                             <div class="card-custom-content p-4">
                                 <h4>Portfolio</h4>
                                 <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                                <a href="#" class="link-custom">Read More</a>
+                                <a  target="_blank" href="#" class="link-custom">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -401,10 +466,23 @@
                             <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">                                    
                                     <p class="lead text-brand mb-2">
-                                        Enthusiastic Learner and Collaborator
+                                        <!-- Enthusiastic Learner and Collaborator -->
+                                        Software Engineer | Web Application Developer | ML Enthusiast
                                     </p>
-                                    <p class="mb-0">
+                                    <!-- <p class="mb-0">
                                         Driven by a passion for continual growth and a keen interest in web development and machine learning, I thrive on expanding my knowledge and engaging with diverse communities across various platforms. With a dedication to learning and a penchant for collaboration, I am committed to leveraging my skills to contribute meaningfully to innovative projects and teams.
+                                    </p> -->
+                                    <p class="mb-0">
+                                        B.Sc. (Engg.) in Computer Science and Engineering – graduated with First Class (CGPA: 3.70/4.00) from RUET.
+                                        I specialize in web application development and machine learning, and have completed 
+                                        <a class="text-bran_d fw-bold" href="https://www.linkedin.com/in/tanvir-anjom-siddique/details/certifications/" target="_blank">42+ certified online courses</a> 
+                                        and 
+                                        <a class="text-bran_d fw-bold" href="https://www.linkedin.com/in/tanvir-anjom-siddique/details/featured/" target="_blank">13+ certified extracurricular programs</a>.
+                                        I have 
+                                        <a class="text-bran_d fw-bold" href="https://drive.google.com/drive/folders/1g4ZGojpwVAW7ac5bm4bSfXjh3Ou72hpY?usp=drive_link" target="_blank">authored technical books</a>, 
+                                        developed full-stack web apps, and worked on 
+                                        <a class="text-bran_d fw-bold" href="https://github.com/tanvirsweb/Machine-Learning-Specialization-Coursera/" target="_blank">machine learning projects</a>. 
+                                        I am passionate about clean code, scalable systems, and lifelong learning, with a strong desire to contribute to impactful software and academic initiatives.
                                     </p>
                                 </div>
                             </div>
@@ -732,10 +810,10 @@
                     <div class="col-auto">
                         <div class="social-icons">
                             <a class="zoom-out-hover" href="mailto: tanvir.anjom.siddique@gmail.com"><i class="lar la-envelope"></i></a>
-                            <a class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
-                            <a class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
-                            <a class="zoom-out-hover" href="https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34"><i class="lab la-dribbble"></i></a>
-                            <a class="zoom-out-hover" href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34"><i class="lab la-dribbble"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
                         </div>
                     </div>
                 </div>
