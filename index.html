@@ -183,7 +183,7 @@
                 </div>
                 
                 <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Professional Skills</h3>
-                <div class="scroller" data-speed="fast" data-aos="fade-up">
+                <div id ="scroller-1" class="scroller" data-speed="fast" data-aos="fade-up">
                     <ul class="tag-list scroller__inner">
                         <li class="zoom-out-hover">C</li>
                         <li class="zoom-out-hover">C++</li>
@@ -202,13 +202,15 @@
                         <li class="zoom-out-hover">MySQL</li> 
                         <li class="zoom-out-hover">MySQL Lite</li>                         
                         <li class="zoom-out-hover">Prisma</li>
-                        <li class="zoom-out-hover">SEO</li>                    
+                        <li class="zoom-out-hover">SEO</li>   
+                        <li class="zoom-out-hover">Git</li>
+                        <li class="zoom-out-hover">Version Control</li>                 
                         <!-- <li class="zoom-out-hover"> --|-- </li> -->
                     </ul>
                 </div><br>
                 
                 <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Interpersonal Skills</h3>
-                <div class="scroller" data-direction="right" data-speed="slow" data-aos="fade-up" data-aos-delay="300">
+                <div id ="scroller-2" class="scroller" data-direction="right" data-speed="slow" data-aos="fade-up" data-aos-delay="300">
                     <ul class="tag-list scroller__inner">  
                         <li class="zoom-out-hover">Creativity</li>
                         <li class="zoom-out-hover">Problem Solving</li>
@@ -225,9 +227,10 @@
                 </div><br>
 
                 <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Proficiency Skills</h3>
-                <div class="scroller" data-speed="fast" data-aos="fade-up" data-aos-delay="300">
+                <div id ="scroller-3" class="scroller" data-speed="fast" data-aos="fade-up" data-aos-delay="300">
                     <ul class="tag-list scroller__inner">
                         <li class="zoom-out-hover">LaTeX</li>
+                        <li class="zoom-out-hover">GitHub Desktop</li>
                         <li class="zoom-out-hover">Linux Terminal</li>
                         <li class="zoom-out-hover">Microsoft Word</li>
                         <li class="zoom-out-hover">Microsoft Powerpoint</li>
@@ -239,14 +242,19 @@
                         <li class="zoom-out-hover">Netbeans</li>
                         <!-- <li class="zoom-out-hover"> --|-- </li> -->
                     </ul>
-                </div><br>
+                </div><br><br>
+
+                <div class="py-2 text-center" data-aos="fade-up">
+                    <span id="scroll-toggle-btn" class="btn btn-brand me-3 d-none d-sm-inline">Disable Scrolls</span>
+                </div>
+                
             </div>
         </section>
         <!-------------------------- End Skills ----------------------->
 
 
         <!-------------------------- Services ----------------------->
-        <section id="services" class="full-height px-lg-5">
+        <!-- <section id="services" class="full-height px-lg-5">
             <div class="container">
 
                 <div class="row pb-4" data-aos="fade-up">
@@ -260,20 +268,20 @@
 
                     <div class="col-md-4" data-aos="fade-up">
                         <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
-                            <!-- custom class: sevice,bg-base,shadow-effect -->
+                            < !-- custom class: sevice,bg-base,shadow-effect -- >
                             <div class="iconbox rounded-4">
                                 <i class="las la-feather"></i>
-                                <!-- goto line awesome search 'feather' copy class. Before that downloader line awesome icon should be included. -->
+                                < !-- goto line awesome search 'feather' copy class. Before that downloader line awesome icon should be included. -- >
                             </div>
                             <h5 class="mt-4 mb-2">UX Design</h5>
                             <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
                             <a href="#" class="link-custom">Read More</a>
                         </div>
                     </div>
-                    <!-- end col-md-4 fade-up -->
+                    < !-- end col-md-4 fade-up -- >
 
-                    <!-- each div has different delay(increasing order) set.So that they fade up One by One
-                    data-aos-dalya="300" , "600"... -->
+                    < !-- each div has different delay(increasing order) set.So that they fade up One by One
+                    data-aos-dalya="300" , "600"... -- >
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
@@ -298,6 +306,105 @@
 
                 </div>
 
+            </div>
+        </section> -->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h2>Services That I Provide</h2>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <!-- Full-Stack Web Development -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Full-Stack Web Development</h5>
+                            <p>I build scalable and secure full-stack web applications using Django, React, Node.js, and Express.js with modern UI/UX and robust backend logic.</p>
+                            <a  href="#" class="d-l link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning Solutions -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-brain"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Machine Learning Solutions</h5>
+                            <p>I provide intelligent solutions with deep learning models, CNN-LSTM hybrids, and federated learning frameworks for tasks like anomaly detection and classification.</p>
+                            <a  href="#" class="d-l link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Technical Mentorship -->
+                    <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-users-cog"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Mentorship & Leadership</h5>
+                            <p>I mentor students and developers, offering guidance on coding, Git, project architecture, and team collaboration as a technical leader.</p>
+                            <a  href="#" class="d-l link-custom">Read More</a>
+                        </div>
+                    </div> -->
+
+                    <!-- Research & Academic Support -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-chalkboard-teacher"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Research & Academic Support</h5>
+                            <p>I support academic writing, LaTeX formatting, dataset preparation, and performance evaluation in AI and cybersecurity research.</p>
+                            <a  href="#" class="d-l link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX & Responsive Design -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-pencil-ruler"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">UI/UX & Responsive Design</h5>
+                            <p>I design modern, responsive user interfaces using HTML, CSS, Bootstrap, and JS, focusing on usability and visual appeal.</p>
+                            <a  href="#" class="d-l link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Version Control -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="lab la-git-alt"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">DevOps & Version Control</h5>
+                            <p>I manage repositories with Git/GitHub and automate workflows with GitHub Actions for collaborative, test-driven development.</p>
+                            <a  href="#" class="d-l link-custom">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const links = document.querySelectorAll('.d-l');
+                            const url = 'https://github.com/tanvirsweb';
+
+                            links.forEach(link => {
+                                link.href = url;
+                                link.target = '_blank';
+                            });
+                        });
+
+                    </script>
+
+                </div>
             </div>
         </section>
 
@@ -490,49 +597,47 @@
                     </div>                
 
                     <div class="col-lg-12">
-
                         <h3 id="education" class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
                         <div class="row gy-4">
 
                             <div class="col-12 col-md-6" data-aos="fade-up">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>BSC In CSE</h4>
-                                    <p class="text-brand mb-2">Rajshahi University of Engineering & Technology 
-                                        <br>(2019 - 2025)</p>
-                                    <p class="mb-0">Obtained CGPA 3.70 out of 4</p>
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>BSc in Computer Science & Engineering</h4>
+                                    <p class="text-brand mb-2">Rajshahi University of Engineering & Technology (RUET)<br>(2020 – 2025)</p>
+                                    <p class="mb-1">CGPA: <strong>3.70</strong> out of 4.00</p>
+                                    <p class="mb-0">Awarded <strong>technical scholarship for academic excellence</strong> in all four years.</p>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>HSC</h4>
-                                    <p class="text-brand mb-2">Notre Dame College, Dhaka 
-                                        <br>(2017 - 2019)</p>
-                                    <p class="mb-0">Obtained GPA 5 out of 5</p>
+                            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Higher Secondary Certificate (HSC)</h4>
+                                    <p class="text-brand mb-2">Notre Dame College, Dhaka<br>(2017 – 2019)</p>
+                                    <p class="mb-0">GPA: <strong>5.00</strong> out of 5.00 (Science)</p>
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6" data-aos="fade-up">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>SSC</h4>
-                                    <p class="text-brand mb-2">Kalihai RS Pilot Model High School, Tangail 
-                                        <br>(2015 - 2017)</p>
-                                    <p class="mb-0">Obtained GPA 5 out of 5</p>
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Secondary School Certificate (SSC)</h4>
+                                    <p class="text-brand mb-2">Kalihati R.S. Pilot Model High School, Tangail<br>(2015 – 2017)</p>
+                                    <p class="mb-1">GPA: <strong>5.00</strong> out of 5.00</p>
+                                    <p class="mb-0">Awarded <strong>Board Scholarship</strong> for academic merit.</p>
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>JSC</h4>
-                                    <p class="text-brand mb-2">Kalihai RS Pilot Model High School, Tangail 
-                                        <br>(2012 - 2014)</p>
-                                    <p class="mb-0">Obtained GPA 5 out of 5</p>
+                            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Junior School Certificate (JSC)</h4>
+                                    <p class="text-brand mb-2">Kalihati R.S. Pilot Model High School, Tangail<br>(2014 – 2015)</p>
+                                    <p class="mb-1">GPA: <strong>5.00</strong> out of 5.00</p>
+                                    <p class="mb-0">Awarded <strong>Board Scholarship</strong> for academic merit.</p>
                                 </div>
                             </div>
 
                         </div>
-
                     </div>
+
 
                     <div class="col-lg-12">
 
@@ -580,7 +685,7 @@
                         <div class="row gy-4">
 
                             <div class="col-12 col-md-6" data-aos="fade-up">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">                            
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">                            
                                     <h4>Joint Secretary</h4>
                                     <p class="text-brand mb-2">RUET Carrer Forum (RCF)</p>                                    
                                     <p class="mb-0">Excom (2023- 2024)</p>                                                                       
@@ -588,7 +693,7 @@
                             </div>
                             
                             <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Joint Secretary</h4>
                                     <p class="text-brand mb-2">Public University Students Association of Kalihati (PUSAK)</p>
                                     <p class="mb-0">Excom (2023- 2024)</p>                                                                        
@@ -596,7 +701,7 @@
                             </div>
                             
                             <div class="col-12 col-md-6" data-aos="fade-up">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Assistant ICT Secretary</h4>
                                     <p class="text-brand mb-2">RUET Carrer Forum (RCF)</p>
                                     <p class="mb-0">Excom (2022- 2023)</p>                                                                        
@@ -604,7 +709,7 @@
                             </div>
                             
                             <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                <div class="h-100 bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Member</h4>
                                     <p class="text-brand mb-2">RUET Carrer Forum (RCF)</p>
                                     <p class="mb-0">Excom (2021- 2022)</p>                                                                        
@@ -825,6 +930,7 @@
 
 
     <!-- -------------------JS----------------- -->
+    <script src="./assets/js/infinite-scroller-enable-disable.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.min.js"></script>
     <script src="./assets/js/main.min.js"></script>
@@ -833,5 +939,10 @@
     <script src="./assets/js/emailJS.min.js"></script>
     <script src="./assets/js/typeWriting.min.js"></script>
     <script src="./assets/js/infinite-scroller.min.js"></script>
+    
+    
+
+
+
 </body>
 </html>
