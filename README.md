@@ -1,6 +1,6 @@
 # Hello World!, I'm Tanvir Anjom Siddique, a Bangladeshi Web Developer 👋🏼:
 
-🛜 currently working on my own [webpage](https://www.tanvirsweb.github.io)
+🛜 currently working on my own [webpage](https://tanvirsweb.github.io)
 <br>👨🏼‍🎓 Graduate CSE Engineer from RUET
 <br>👨🏼‍💻 working as a web developer since 2020
 
