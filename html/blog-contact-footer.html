@@ -1,0 +1,181 @@
+
+
+<!------------------------- Blog --------------------------------------->
+<section id="blog" class="full-height px-lg-5">
+    <div class="container">
+
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+                <h6 class="text-brand">BLOG</h6>
+                <h2>My BLog Posts</h2>
+            </div>
+        </div>
+        <!-- end 1st grid 'row' -->
+
+        <div class="row gy-4">
+            <!-- make all columns same height -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./assets/images/blog-post-1.webp" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <p class="text-brand mb-2">07 Oct, 2024</p>
+                        <h5 class="mb-4">Elevate Your Presentation</h5>
+                        <a href="./blog/elevate-presentation/index.html" class="link-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up"  data-aos-delay="300">
+                <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./assets/images/blog-post-1.webp" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <p class="text-brand mb-2">09 July, 2025</p>
+                        <h5 class="mb-4">A complete reference of essential Git commands</h5>
+                        <a href="https://tanvirsweb.github.io/git_commands_A-Z/" class="link-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up"  data-aos-delay="600">
+                <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./assets/images/blog-post-1.webp" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <p class="text-brand mb-2">12 July, 2025</p>
+                        <h5 class="mb-4">Fullstack Docker TestApp </h5>
+                        <a href="https://tanvirsweb.github.io/docker-testapp/" class="link-custom">Read More</a>
+                    </div>
+                </div>
+            </div>                    
+
+            <!-- <div class="h-100 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img class="rounded-4" src="./assets/images/blog-post-2.webp" alt="">
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <p class="text-brand mb-2">10 May, 2023</p>
+                        <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                        <a href="#" class="link-custom">Read More</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        <!-- end row gy-4 -->
+
+    </div>
+</section>
+<!---------------------------End Blog -------------------------------------->
+
+
+
+<!--------------------------- Contact Email js-------------------------------------->
+<!-- <section id="contact" class="full-height px-lg-5">
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+                <h6 class="text-brand">CONTACT</h6>
+                <h2>Interested in working together? Let's talk
+                </h2>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                <div action="#" class="row g-lg-3 gy-3">
+                    <! --use div instead of form to send email by emailJS -- >
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Enter your name" id="user_name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" placeholder="Enter your email" id="user_email">
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control" placeholder="Enter subject" id="sub">
+                    </div>
+                    <div class="form-group col-12">
+                        <textarea name="" rows="4" class="form-control" placeholder="Enter your message" id="message"></textarea>
+                    </div>
+                    <div class="form-group col-12 d-grid">
+                        < !-- <button type="submit" class="btn btn-brand">Contact me</button> -- >
+                        <button onclick="funcSendEmail()" class="btn btn-brand">Contact me</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section> -->
+
+<section id="contact" class="full-height px-lg-5">
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+                <h6 class="text-brand">CONTACT</h6>
+                <h2>Interested in working together? Let's talk</h2>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+
+                <form action="https://formspree.io/f/mqeoglne" method="POST" class="row g-lg-3 gy-3">
+
+                    <div class="form-group col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <input type="text" name="subject" class="form-control" placeholder="Enter subject">
+                    </div>
+
+                    <div class="form-group col-12">
+                        <textarea name="message" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <div class="form-group col-12 d-grid">
+                        <button type="submit" class="btn btn-brand">Contact me</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-----------------------End Contact ---------------------------->
+
+
+
+
+<!---------------------- Footer ----------------------------->
+<footer class="py-5 px-lg-5">
+    <div class="container">
+        <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+                <p class="zoom-out-hover mb-0">Designed by <a href="#" class="fw-bold">Tanvir Anjom Siddique</a></p>
+            </div>
+            <div class="col-auto">
+                <div class="social-icons">
+                    <a class="zoom-out-hover" href="mailto: tanvir.anjom.siddique@gmail.com"><i class="lar la-envelope"></i></a>
+                    <a target="blank" class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
+                    <a target="blank" class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
+                    <a target="blank" class="zoom-out-hover" href="https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34"><i class="lab la-dribbble"></i></a>
+                    <a target="blank" class="zoom-out-hover" href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
+                    <a target="blank" class="zoom-out-hover" href="https://scholar.google.com/citations?hl=en&user=mfGRKxkAAAAJ"><i class="las la-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!----------------End Footer --------------------------->
