@@ -63,6 +63,8 @@
         "https://scholar.google.com/citations?hl=en&user=mfGRKxkAAAAJ",
         "https://orcid.org/0009-0006-5743-4776",
         "https://www.researchgate.net/profile/Tanvir-Anjom-Siddique",
+        "https://orcid.org/0009-0006-5743-4776",
+        "https://www.researchgate.net/profile/Tanvir-Anjom-Siddique",
         "https://www.linkedin.com/in/tanvir-anjom-siddique",
         "https://www.facebook.com/tanviranjomsiddique.alvi",
         "https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34",
@@ -149,27 +151,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#research">Research</a>
-                    </li>
+                    </li>                    
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>                    
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
-                    </li>
-                
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#clubs">Clubs</a>
-                    </li> -->
-
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
-                    </li> -->        
+                    </li>                                
                     <li class="nav-item">
                         <a class="nav-link" href="#certifications">Certifications</a>
                     </li>
@@ -240,6 +228,7 @@
                         <div class="d-md-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
                             <div class="social-icons">
                                 <a class="zoom-out-hover" href="mailto: tanvir.anjom.siddique@gmail.com"><i class="lar la-envelope"></i></a>
+                                <a target="_blank" class="zoom-out-hover" href="https://wa.me/8801715619397"><i class="lab la-whatsapp"></i></a>
                                 <a target="blank" class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
                                 <a target="blank" class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
                                 <a target="blank" class="zoom-out-hover" href="https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34"><i class="lab la-dribbble"></i></a>
@@ -257,8 +246,7 @@
             </div>
             <!-- end container -->
         </section>
-        <!--------------------------End Home ------------------------>
-        
+        <!--------------------------End Home ------------------------>      
         <!--------------------------Skills -Infinite Scrollbar -------------------------->
         <section id="skills" class="full-height px-lg-5">
             <div class="container">
@@ -378,7 +366,7 @@
                     </div>
 
                     <!-- Technical Mentorship -->
-                    <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                         <div class="h-100 service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox rounded-4">
                                 <i class="las la-users-cog"></i>
@@ -387,7 +375,7 @@
                             <p>I mentor students and developers, offering guidance on coding, Git, project architecture, and team collaboration as a technical leader.</p>
                             <a  href="#" class="d-l link-custom">Read More</a>
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- Research & Academic Support -->
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
@@ -444,122 +432,127 @@
 
         <!-----------------------------------End Services ------------------------------------------>
        
-        
-        
-<section id="research" class="full-height px-lg-5">
-    <div class="container">
-
-        <div class="row pb-4" data-aos="fade-up">
-            <div class="col-lg-8">
-                <h6 class="text-brand">RESEARCH</h6>
-                <h2>My Publications</h2>
-            </div>
-        </div>
-
-        <div id="journal-container">
-            <!-- <h4>Journals</h4> -->
-            <div class="row gy-4" id="journal-list"></div>
-        </div>
-
-        <div id="conference-container" style="margin-top:30px;">
-            <h4>Conferences</h4>
-            <div class="row gy-4" id="conference-list"></div>
-        </div>
-
-    </div>
-</section>
-
-
-    <script>
-
-        const SCHOLAR_FALLBACK =
-            "https://scholar.google.com/citations?user=mfGRKxkAAAAJ";
-
-        document.addEventListener("DOMContentLoaded", () => {
-            loadResearch();
-        });
-
-        async function loadResearch() {
-
-            const journalList = document.getElementById("journal-list");
-            const conferenceList = document.getElementById("conference-list");
-
-            try {
-
-                const journals = await fetch("./html/journals.json").then(r => r.json());
-                const conferences = await fetch("./html/conferences.json").then(r => r.json());
-
-                journals.sort((a, b) => b.year - a.year);
-                conferences.sort((a, b) => b.year - a.year);
-
-                journalList.innerHTML = renderPapers(journals);
-                conferenceList.innerHTML = renderPapers(conferences);
-
-            } catch (error) {
-                console.log(error);
-                journalList.innerHTML = "<p>Failed to load journals</p>";
-                conferenceList.innerHTML = "<p>Failed to load conferences</p>";
-            }
-        }
-
-        function renderPapers(papers) {
-
-            let html = "";
-
-            papers.forEach(p => {
-
-                const link = p.doi
-                    ? "https://doi.org/" + p.doi
-                    : SCHOLAR_FALLBACK;
-
-                html += `
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
-
-                            <div class="card-custom-content p-4">
-
-                                <h4>${p.title}</h4>
-
-                                <p class="">
-                                    ${p.venue || "Publication"} | ${p.year}
-                                </p>
-
-                                <p class="small">
-                                    ${p.author}
-                                </p>
-
-                                <a href="${link}" target="_blank" class="link-custom">
-                                    View Paper
-                                </a>
-
-                            </div>
-
-                        </div>
+        <section id="research" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">RESEARCH</h6>
+                        <h2>My Publications</h2>
                     </div>
-                `;
+                </div>
+
+                <div id="journal-container" data-aos="fade-up">
+                    <!-- <h4>Journals</h4> -->
+                    <div class="row gy-4" id="journal-list"></div>
+                </div>
+
+                <div id="conference-container" style="margin-top:30px;" data-aos="fade-up">
+                    <h4>Conferences</h4>
+                    <div class="row gy-4" id="conference-list"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <script>
+
+            const SCHOLAR_FALLBACK = "https://github.com/tanvirsweb/Research-Papers-and-Projects/";
+                <!-- "https://scholar.google.com/citations?user=mfGRKxkAAAAJ"; -->
+
+            document.addEventListener("DOMContentLoaded", () => {
+                loadResearch();
             });
 
-            return html;
-        }
+            async function loadResearch() {
 
-    </script>
+                const journalList = document.getElementById("journal-list");
+                const conferenceList = document.getElementById("conference-list");
+
+                try {
+
+                    const journals = await fetch("./html/journals.json").then(r => r.json());
+                    const conferences = await fetch("./html/conferences.json").then(r => r.json());
+
+                    journals.sort((a, b) => b.year - a.year);
+                    conferences.sort((a, b) => b.year - a.year);
+
+                    journalList.innerHTML = renderPapers(journals);
+                    conferenceList.innerHTML = renderPapers(conferences);
+
+                } catch (error) {
+                    console.log(error);
+                    journalList.innerHTML = "<p>Failed to load journals</p>";
+                    conferenceList.innerHTML = "<p>Failed to load conferences</p>";
+                }
+            }
+
+            function renderPapers(papers) {
+
+                let html = "";
+
+                papers.forEach(p => {
+
+                    const link = p.doi
+                        ? "https://doi.org/" + p.doi
+                        : SCHOLAR_FALLBACK;
+
+                    html += `
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="h-100 card-custom rounded-4 bg-base shadow-effect">
+
+                                <div class="card-custom-content p-4">
+
+                                    <h4>${p.title}</h4>
+
+                                    <p class="">
+                                        ${p.venue || "Publication"} | ${p.year}
+                                    </p>
+
+                                    <p class="small">
+                                        ${p.author}
+                                    </p>
+
+                                    <a href="${link}" target="_blank" class="link-custom">
+                                        View Paper
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    `;
+                });
+
+                return html;
+            }
+
+        </script>
 
 
-        <!-- <div id="d-research">Loading content ...</div> -->
-        <div id="d-work">Loading content ...</div>
-        <div id="d-about">Loading content ...</div>
-        <div id="d-certification-books">Loading content ...</div>
-        <div id="d-blog-contact-footer">Loading content ...</div>
+        
+        <!-- <div id="d-work">Loading content ...</div> -->
+         <section id="projects" class="full-height px-lg-5"></section>
+        <!-- <div id="d-about">Loading content ...</div> -->
+         <section id="about" class="full-height px-lg-5"></section>
+        <!-- <div id="d-certification-books">Loading content ...</div> -->
+         <section id="certifications" class="full-height px-lg-5"></section>
+         <section id="books" class="full-height px-lg-5"></section>
+         <section id="blog" class="full-height px-lg-5"></section>
+         <section id="contact" class="full-height px-lg-5"></section>
+        <!-- <div id="d-blog-contact-footer">Loading content ...</div> -->
         
 
         <!-- Render Dynamic Contents -->
 
         <script>
             const filesToLoadDynamic = {
-                'd-work': './html/work.html',
-                'd-about': './html/about.html',
-                'd-certification-books': './html/certification-book.html',
-                'd-blog-contact-footer': './html/blog-contact-footer.html'
+                'projects': './html/work.html',
+                'about': './html/about.html',
+                'certifications': './html/certification.html',
+                'books': './html/book.html',
+                'blog': './html/blog.html',
+                'contact': './html/contact.html'
             };
 
             async function loadFileDynamic(elementId, fileName) {
@@ -604,13 +597,33 @@
             window.addEventListener('DOMContentLoaded', loadAllContentDynamic);
         </script>
 
-
-
-
-
+        <!---------------------- Footer ----------------------------->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="zoom-out-hover mb-0">Designed by <a href="#" class="fw-bold">Tanvir Anjom Siddique</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a class="zoom-out-hover" href="mailto: tanvir.anjom.siddique@gmail.com"><i class="lar la-envelope"></i></a>
+                            <a target="_blank" class="zoom-out-hover" href="https://wa.me/8801715619397"><i class="lab la-whatsapp"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://www.facebook.com/tanviranjomsiddique.alvi"><i class="lab la-facebook"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://www.linkedin.com/in/tanvir-anjom-siddique-50028a205"><i class="lab la-linkedin"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://www.coursera.org/user/68c3b690076eb7a16bc673208dfcaf34"><i class="lab la-dribbble"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://github.com/tanvirsweb/"><i class="lab la-github"></i></a>
+                            <a target="blank" class="zoom-out-hover" href="https://scholar.google.com/citations?hl=en&user=mfGRKxkAAAAJ"><i class="las la-graduation-cap"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!----------------End Footer --------------------------->
     </div>
     <!-- End Content Wrapper -->
 
+
+    
 
     <!-- -------------------JS----------------- -->
     <script src="./assets/js/infinite-scroller-enable-disable.js"></script>
@@ -621,7 +634,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./assets/js/emailJS.min.js"></script>
     <script src="./assets/js/typeWriting.min.js"></script>
-    <script src="./assets/js/infinite-scroller.min.js"></script>
+    <!-- <script src="./assets/js/infinite-scroller.min.js"></script> -->
+    
     
 
 </body>
